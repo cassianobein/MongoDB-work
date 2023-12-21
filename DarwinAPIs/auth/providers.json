@@ -13,6 +13,6 @@
             "runConfirmationFunction": false,
             "runResetFunction": true
         },
-        "disabled": true
+        "disabled": false
     }
 }
