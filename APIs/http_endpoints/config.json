@@ -5,7 +5,7 @@
         "function_name": "getInfo",
         "validation_method": "NO_VALIDATION",
         "respond_result": true,
-        "fetch_custom_user_data": false,
+        "fetch_custom_user_data": true,
         "create_user_on_auth": false,
         "disabled": false,
         "return_type": "JSON"
