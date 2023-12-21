@@ -13,7 +13,7 @@
     {
         "route": "/addInfo",
         "http_method": "POST",
-        "function_name": "resetFunc",
+        "function_name": "addInfo",
         "validation_method": "NO_VALIDATION",
         "respond_result": true,
         "fetch_custom_user_data": false,

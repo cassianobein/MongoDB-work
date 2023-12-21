@@ -7,5 +7,10 @@
     {
         "name": "resetFunc",
         "private": true
+    },
+    {
+        "name": "addInfo",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
