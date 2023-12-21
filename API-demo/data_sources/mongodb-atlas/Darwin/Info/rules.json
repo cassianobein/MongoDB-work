@@ -3,16 +3,26 @@
     "database": "Darwin",
     "roles": [
         {
-            "name": "readAll",
+            "name": "limitedView",
             "apply_when": {},
             "document_filters": {
-                "write": false,
-                "read": true
+                "write": {},
+                "read": {}
             },
-            "read": true,
-            "write": false,
-            "insert": false,
-            "delete": false,
+            "fields": {
+                "email": {
+                    "write": false,
+                    "read": true
+                },
+                "first_name": {
+                    "write": false,
+                    "read": true
+                },
+                "last_name": {
+                    "write": false,
+                    "read": true
+                }
+            },
             "search": true
         }
     ]
