@@ -1,0 +1,50 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "address": {
+            "bsonType": "string"
+        },
+        "age": {
+            "bsonType": "int"
+        },
+        "email": {
+            "bsonType": "string"
+        },
+        "first_name": {
+            "bsonType": "string"
+        },
+        "gender": {
+            "bsonType": "string"
+        },
+        "hobbies": {
+            "bsonType": "string"
+        },
+        "is_married": {
+            "bsonType": "bool"
+        },
+        "job": {
+            "bsonType": "string"
+        },
+        "last_name": {
+            "bsonType": "string"
+        },
+        "orders": {
+            "bsonType": "int"
+        },
+        "phone": {
+            "bsonType": "string"
+        },
+        "registered": {
+            "bsonType": "string"
+        },
+        "spent": {
+            "bsonType": "double"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Info"
+}
