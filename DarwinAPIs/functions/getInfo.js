@@ -22,12 +22,10 @@ exports = function({ query, headers, body}, response) {
     // var x = context.values.get("value_name");
 
     // Querying a mongodb service:
-    if (fname != null){
-      const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({first_name: fname,last_name: lname});
-    }
-    else { 
-      const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({});
-    }
+    const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({});
+    //const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({first_name: fname,last_name: lname});
+
+
     // Calling a function:
     // const result = context.functions.execute("function_name", arg1, arg2);
 
