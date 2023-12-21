@@ -12,7 +12,8 @@ exports = function({ query, headers, body}, response) {
     // This is a binary object that can be accessed as a string using .text()
     const reqBody = body;
 
-    console.log("arg1, arg2: ", arg1, arg2);
+    //console.log("arg1, arg2: ", arg1, arg2);
+    console.log("fname, lname: ",fname, lname);
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", reqBody);
 
