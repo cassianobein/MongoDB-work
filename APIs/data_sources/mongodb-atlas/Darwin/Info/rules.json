@@ -7,10 +7,10 @@
             "apply_when": {},
             "document_filters": {
                 "write": {
-                    "owner_id": "%%user.id"
+                    "email": "%%user.id"
                 },
                 "read": {
-                    "owner_id": "%%user.id"
+                    "email": "%%user.id"
                 }
             },
             "read": true,
