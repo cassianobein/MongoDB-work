@@ -1,0 +1,8 @@
+{
+    "app_id": "darwinapis-bdhzc",
+    "config_version": 20210101,
+    "name": "DarwinAPIs",
+    "location": "US-VA",
+    "provider_region": "gcp-us-central1",
+    "deployment_model": "LOCAL"
+}
