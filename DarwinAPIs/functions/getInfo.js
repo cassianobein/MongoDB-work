@@ -3,8 +3,9 @@ exports = function({ query, headers, body}, response) {
     // Data can be extracted from the request as follows:
 
     // Query params, e.g. '?arg1=hello&arg2=world' => {arg1: "hello", arg2: "world"}
-    const {arg1, arg2} = query;
-
+    const {fname, lname} = query;
+    //fname = "Cassiano";
+    //lname = "Bein";
     // Headers, e.g. {"Content-Type": ["application/json"]}
     const contentTypes = headers["Content-Type"];
 
@@ -12,7 +13,7 @@ exports = function({ query, headers, body}, response) {
     // This is a binary object that can be accessed as a string using .text()
     const reqBody = body;
 
-    console.log("arg1, arg2: ", arg1, arg2);
+    console.log("fname, lname: ", fname, lname);
     console.log("Content-Type:", JSON.stringify(contentTypes));
     console.log("Request body:", reqBody);
 
@@ -21,8 +22,8 @@ exports = function({ query, headers, body}, response) {
     // var x = context.values.get("value_name");
 
     // Querying a mongodb service:
-    //const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne("{first_name: 'Jessica',last_name: 'Smith'}");
-    const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({});
+    const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({first_name: fname,last_name: lname});
+    //const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne({});
     // Calling a function:
     // const result = context.functions.execute("function_name", arg1, arg2);
 
