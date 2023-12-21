@@ -12,5 +12,10 @@
         "name": "addInfo",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "getInfobyName",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
