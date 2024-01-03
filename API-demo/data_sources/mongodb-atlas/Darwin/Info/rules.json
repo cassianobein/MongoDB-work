@@ -3,26 +3,20 @@
     "database": "Darwin",
     "roles": [
         {
-            "name": "limitedView",
+            "name": "readOwnWriteOwn",
             "apply_when": {},
             "document_filters": {
-                "write": {},
-                "read": {}
-            },
-            "fields": {
-                "email": {
-                    "write": false,
-                    "read": true
+                "write": {
+                    "owner_id": "%%user.id"
                 },
-                "first_name": {
-                    "write": false,
-                    "read": true
-                },
-                "last_name": {
-                    "write": false,
-                    "read": true
+                "read": {
+                    "owner_id": "%%user.id"
                 }
             },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
             "search": true
         }
     ]
